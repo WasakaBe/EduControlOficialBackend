@@ -6,7 +6,7 @@ class TBL_USERS(db.Model):
     app_users = db.Column(db.String(255), nullable=False)
     apm_users = db.Column(db.String(255))
     age_users = db.Column(db.Integer)
-    fecha_nacimiento_users = db.Column(db.Date)
+    token_users = db.Column(db.String(20))
     correo_users = db.Column(db.String(255), unique=True, nullable=False)
     pwd_users = db.Column(db.String(255), nullable=False)
     foto_users = db.Column(db.LargeBinary)
